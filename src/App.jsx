@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import logo from "./assets/logo.svg";
+import arrow from "./assets/icon-arrow.svg";
+import errorIcon from "./assets/icon-error.svg";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -20,7 +23,7 @@ function App() {
   return (
     <div className="app">
       <nav>
-        <img src="logo.svg" alt="Logo" id="logo" />
+        <img src={logo} alt="Logo" id="logo" />
       </nav>
       <div id="photo"></div>
       <div id="info">
@@ -39,11 +42,11 @@ function App() {
             onChange={(event) => handleChange(event)}
           />
           <button onClick={handleSubmit}>
-            <img src="icon-arrow.svg" alt="" />
+            <img src={arrow} alt="" />
           </button>
           {error && (
             <>
-              <img src="icon-error.svg" alt="" id="error-icon" />
+              <img src={errorIcon} alt="" id="error-icon" />
               <p>Please provide a valid email</p>
             </>
           )}

@@ -31,7 +31,7 @@ nav {
   width: 23.4375rem;
   align-self: center;
   height: 250px;
-  background-image: url("hero-mobile.jpg");
+  background-image: url("./assets/hero-mobile.jpg");
 }
 
 #info {
@@ -136,7 +136,7 @@ p {
   .app {
     height: 50rem;
     width: 90rem;
-    background: url("bg-pattern-desktop.svg");
+    background: url("./assets/bg-pattern-desktop.svg");
     position: relative;
     align-items: flex-start;
   }
@@ -151,7 +151,7 @@ p {
   }
 
   #photo {
-    background-image: url("hero-desktop.jpg");
+    background-image: url("./assets/hero-desktop.jpg");
     position: absolute;
     top: 0;
     right: 0;
